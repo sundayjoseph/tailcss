@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/ea480c2b64.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Space+Grotesk:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+         fontFamily: {
+            jose: "'Josefin Sans', sans-serif",
+            open: "'Open Sans', sans-serif"
+         }
+        }
+      }
+    }
+  </script>
+
+  </head>
+  <body class="font-jose">
+    <header>
+      <div class=" items-center flex justify-between px-6 py-2 md:px-20 md:py-6 md:mt-2 md:shadow-[0_0.5px_10px_0px_rgba(0,0,0,0.15)]">
+        <div class="inline-flex gap-x-2">
+          <img  src="./images/Tairo Logo Asset.png" alt="">
+          <h3 class="text-base leading-4 my-auto">TAIRO</h3>
+        </div>
+        <ul class="flex gap-x-6 text-base leading-4 hidden md:flex">
+          <li class="underline underline-offset-4 decoration-2"><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#frames">Frames</a></li>
+          <li><a href="#exhibition">Exhibitions</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="block text-2xl md:hidden"> <i class="fa-solid fa-bars"></i></div>
+      </div>
+    </header>
+    <div class="hidden bg-no-repeat w-[375.5px] h-[622px] bg-right sm:w-full" style="background-image: url(./images/hero\ image.png);"></div>
+
+    </div>
+
+    <main>
+      <section class="relative" >
+        <div class="relative h-[622px] max-w-[1080px] sm:max-xl:mx-auto xl:pt-14 xl:mx-auto">
+          <div class="absolute z-10 right-0">
+            <img class=" min-w-[375.5px] h-[622px] object-cover max-[460px]:object-right sm:object-none sm:w-full" src="./images/hero image.png" alt="">
+          </div>
+          <div class="text-white sm:text-black z-10 pt-60 absolute ">
+            <h1 class=" text-[76px] leading-[76px] pl-16 lg:text-[120px] xl:pl-12 lg:-ml-12">Tairo Mul<span class="text-[76px] leading-[76px] lg:text-[120px] xl:text-white">ani</span></h1>
+            <h3 class="font-open leading-5 tracking-[.25em] pt-2.5 px-[67px] xl:text-xl ">AWARD WINNING ARTIST</h3>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative bg-[#F7931E]" id="about">
+        <div class="relative px-6 lg:grid lg:grid-cols-2 gap-16 md:max-xl:px-20 xl:px-40 pt-28 pb-28">
+          <div class="relative sm:px-[67px] max-[375px]:px-9">
+            <h1 class="text-2xl md:text-5xl"> Tairo is an award winning artist based in New York.</h1>
+            <p class="font-open text-sm leading-7 pt-6 md:text-base">Tairo Mulani’s art "negotiates the cultural terrain between 
+              his adopted home in America and his native Kenya, creating collage
+              and photo transfer-based paintings that expose the challenges of 
+              occupying these two worlds".
+            </p>
+            <div class="text-base font-semibold leading-7 pt-7"><a class="button" href="#">Read more</a> <i class="fa-solid fa-chevron-right" style="color: #000000;"></i></div>
+          </div>
+          
+          <div class="mx-auto relative pt-24 min-[590px]:hidden">
+            <img class="w-32 h-40 absolute -bottom-44 right-52" src="./images/Rectangle 71.png" alt="artist paintings">
+            <img class="w-28 h-36 absolute -bottom-24 right-28 z-10" src="./images/Rectangle 71 (2).png" alt="artist paintings">
+            <img class="w-[117px] h-36 absolute -bottom-40 right-0" src="./images/Rectangle 71 (3).png" alt="artist paintings">
+          </div>
+
+          <div class="w-full mx-auto h-[406px] relative object-cover hidden min-[590px]:block">
+            <img class="min-w-32 min-h-40 absolute bottom-0 right-80" src="./images/Rectangle 71.png" alt="artist paintings">
+            <img class="min-w-28 min-h-36 absolute top-8 right-40 z-10" src="./images/Rectangle 71 (2).png" alt="artist paintings">
+            <img class="min-w-[117px] min-h-36 absolute top-32 right-0" src="./images/Rectangle 71 (3).png" alt="artist paintings">
+          </div>
+        </div> 
+      </section>
+
+      <section id="frames">
+          <h1 class="pt-40 pl-6 text-4xl font-semibold lg:text-6xl lg:px-20">Frames</h1>
+          <div class="relative" id="slider-wrapper"> 
+            <div class="flex overflow-x-hidden snap-mandatory snap-x scroll-smooth" id="slider">         
+              <div class="snap-start flex-[1_0_100%] md:grid grid-cols-2 lg:px-28" id="slide1"> 
+                <div class="overflow-hidden">
+                  <img class="min-w-[323px] min-h-56 mx-auto px-6 pt-6 min-w-full min-h-full" src="./images/Frames image.png" alt="frames-image">
+                </div>
+                <div class="lg:my-auto">
+                  <h2 class="text-2xl leading-6 font-semibold pt-7 pl-6 lg:text-5xl">The Raft of Medusa</h2>
+                  <p class="font-open text-sm leading-7 text-[#333333] pt-2.5 px-6 lg:text-base">
+                    Painted in late fall summer spring of 1806,
+                    it depicts the melting away of inhibitions.
+                    The basic idea was to create a piece that spoke
+                    to many although represented by what seems to be a form
+                  </p>
+                  <div class="text-base leading-7 font-semibold pt-5 text-[#aa2072] pl-6 hover:opacity-70">
+                    <a href="#" class="lg:text-xl">Buy</a> <span><i class="fa-solid fa-chevron-right w-5 h-5" style="color: #aa2072;"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="snap-start flex-[1_0_100%] md:grid grid-cols-2 lg:px-28" id="slide2"> 
+                <div class="overflow-hidden">
+                  <img class="min-w-[323px] min-h-56 mx-auto px-6 pt-6 min-w-full min-h-full object-contain" src="./images/painting.image.jpg" alt="frames-image">
+                </div>
+                <div class="lg:my-auto">
+                  <h2 class="text-2xl leading-6 font-semibold pt-7 pl-6 lg:text-5xl">The Eye of Medusa</h2>
+                  <p class="font-open text-sm leading-7 text-[#333333] pt-2.5 px-6 lg:text-base">
+                    Painted in late fall summer spring of 1856,
+                    it depicts the melting away of inhibitions.
+                    The basic idea was to create a piece that spoke
+                    to many although represented by what seems to be a form
+                  </p>
+                  <div class="text-base leading-7 font-semibold pt-5 text-[#aa2072] pl-6 hover:opacity-70">
+                    <a href="#" class="lg:text-xl">Buy</a> <span><i class="fa-solid fa-chevron-right w-5 h-5" style="color: #aa2072;"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="snap-start flex-[1_0_100%] md:grid grid-cols-2 lg:px-28" id="slide3"> 
+                <div class="overflow-hidden">
+                  <img class="min-w-[323px] min-h-56 mx-auto px-6 pt-6 min-w-full min-h-full object-contain" src="./images/Enwonwu-Ben-artwork.webp" alt="frames-image">
+                </div>
+                <div class="lg:my-auto">
+                  <h2 class="text-2xl leading-6 font-semibold pt-7 pl-6 lg:text-5xl">The Spirit of Ogolo</h2>
+                  <p class="font-open text-sm leading-7 text-[#333333] pt-2.5 px-6 lg:text-base">
+                    Painted in late fall summer spring of 2021,
+                    it depicts the melting away of inhibitions.
+                    The basic idea was to create a piece that spoke
+                    to many although represented by what seems to be a form
+                  </p>
+                  <div class="text-base leading-7 font-semibold pt-5 text-[#aa2072] pl-6 hover:opacity-70">
+                    <a href="#" class="lg:text-xl">Buy</a> <span><i class="fa-solid fa-chevron-right w-5 h-5" style="color: #aa2072;"></i></span>
+                  </div>
+                </div>
+              </div>
+              <div class="snap-start flex-[1_0_100%] md:grid grid-cols-2 lg:px-28" id="slide4"> 
+                <div class="overflow-hidden">
+                  <img class="min-w-[323px] min-h-56 mx-auto px-6 pt-6 min-w-full min-h-full object-contain" src="./images/painting5.image.jpg" alt="frames-image">
+                </div>
+                <div class="lg:my-auto">
+                  <h2 class="text-2xl leading-6 font-semibold pt-7 pl-6 lg:text-5xl">The Raft of Medusa</h2>
+                  <p class="font-open text-sm leading-7 text-[#333333] pt-2.5 px-6 lg:text-base">
+                    Painted in late fall summer spring of 1856,
+                    it depicts the melting away of inhibitions.
+                    The basic idea was to create a piece that spoke
+                    to many although represented by what seems to be a form
+                  </p>
+                  <div class="text-base leading-7 font-semibold pt-5 text-[#aa2072] pl-6 hover:opacity-70 ">
+                    <a href="#" class="lg:text-xl">Buy</a> <span><i class="fa-solid fa-chevron-right w-5 h-5" style="color: #aa2072;"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+          <div class="flex gap-2 w-20 h-3 mx-auto pt-10 transition duration-700 ease-in">
+            <a class="w-3 h-3 rounded-full bg-neutral-300 hover:bg-neutral-950" href="#slide1"></a>
+            <a class="w-3 h-3 rounded-full bg-neutral-300 hover:bg-neutral-950" href="#slide2"></a>
+            <a class="w-3 h-3 rounded-full bg-neutral-300 hover:bg-neutral-950" href="#slide3"></a>
+            <a class="w-3 h-3 rounded-full bg-neutral-300 hover:bg-neutral-950" href="#slide4"></a>
+          </div>
+
+          <div class="pt-[59px] text-center">
+            <a href="#" class="hover:opacity-90 text-base font-semibold text-white px-5 py-1 bg-[#aa2072] rounded-xl sm:text-xl sm:px-8 sm:py-3">See All</a>
+          </div>
+
+      </section>
+
+      <section class="pt-[85px] pb-28" id="exhibition">
+        <h1 class=" px-6 text-4xl font-semibold lg:text-6xl lg:px-20">Exhibitions</h1>
+        <div class="grid gap-12 px-6 pt-4 md:grid-cols-2 md:gap-x-5 md:gap-y-12 lg:px-20">
+
+          <div class="">
+            <div>
+              <img class="min-w-[326px] min-h-[181px] min-w-full min-h-full" src="./images/desktop exhibition 1.png" alt="exhibition-images">
+            </div>
+            <div class="pt-6">
+              <h1 class="text-2xl leading-6 text-[#aa2072] md:text-4xl xl:text-5xl">The Rennaisance World</h1>
+              <p class="font-open text-sm font-semibold text-[#424242] inline-flex gap-2 items-center pt-2 md:text-base">
+                AUGUST 3<span class="w-1 h-1 bg-[#626262] rounded-full"></span> NIKE ART GALLERY
+              </p>
+            </div>
+          </div>
+
+          <div class="">
+            <div>
+              <img class="hidden md:block  min-w-full" src="./images/desktop exhibition 2.png" alt="exhibition-images">
+              <img class="block md:hidden min-w-full" src="./images/mobile exhibitions 1.png" alt="exhibition-images">
+            </div>
+            <div class="pt-6">
+              <h1 class="text-2xl leading-6 text-[#aa2072] md:text-4xl xl:text-5xl">Culture Reset</h1>
+              <p class="font-open text-sm font-semibold text-[#424242] inline-flex gap-2 items-center pt-2 md:text-base">
+                MARCH 10
+                <span class="w-1 h-1 bg-[#626262] rounded-full"></span>
+                NIKE ART GALLERY
+              </p>
+            </div>
+          </div>
+
+          <div class="">
+            <div>
+              <img class="hidden md:block min-w-full" src="./images/desktop exhibition 3.png" alt="exhibition-images">
+              <img class="block md:hidden min-w-full" src="./images/mobile exhibitions 2.png" alt="exhibition-images">
+            </div>
+            <div class="pt-6">
+              <h1 class="text-2xl leading-6 text-[#aa2072] md:text-4xl xl:text-5xl">Traffic Lights</h1>
+              <p class="font-open text-sm font-semibold text-[#424242] inline-flex gap-2 items-center pt-2 md:text-base">
+                JULY 26<span class="w-1 h-1 bg-[#626262] rounded-full"></span>NIKE ART GALLERY
+              </p>
+            </div>
+          </div>
+
+          <div class="">
+            <div>
+              <img class="hidden md:block min-w-full" src="./images/desktop exhibition 4.png" alt="exhibition-images">
+              <img class="block md:hidden min-w-full" src="./images/mobile exhibitions 3.png" alt="exhibition-images">
+            </div>
+            <div class="pt-6">
+              <h1 class="text-2xl leading-6 text-[#aa2072] md:text-4xl xl:text-5xl">Armadillion</h1>
+              <p class="font-open text-sm font-semibold text-[#424242] inline-flex gap-2 items-center pt-2 md:text-base">
+                MAY 13<span class="w-1 h-1 bg-[#626262] rounded-full"></span>NIKE ART GALLERY
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="pt-[59px] text-center">
+          <a href="#" class="text-base font-semibold text-white px-5 py-1 bg-[#aa2072] rounded-xl sm:text-xl sm:px-8 sm:py-3 hover:opacity-90">See All</a>
+        </div>
+      </section>
+
+      <section class="bg-neutral-100" id="contact">
+        <div class="relative">
+          <img class="absolute right-0 md:hidden"  src="./images/Asset 1 2.png" alt="">
+          <img class="absolute right-0 hidden md:block" src="./images/Asset 1 2 (1).png" alt="">
+        </div>
+        <div class="pt-40 sm:hidden">
+          <h1 class="text-2xl leading-6 font-semibold text-[#333333] text-center sm:text-6xl">Email Updates</h1>
+          <p class="font-open text-sm text-center text-[#333333] px-6 pt-9 sm:text-base">Sign up to receive latest news on my work and exhibitions</p>
+        </div>
+        <div class="pt-40 hidden sm:block xl:pt-16">
+          <h1 class="text-2xl leading-6 font-semibold text-[#333333] text-center sm:text-6xl">Contact</h1>
+          <p class="font-open text-sm text-center text-[#333333] px-6 pt-9 sm:text-base">Leave a message and I’ll get back to you ASAP</p>
+        </div>
+        <div class="px-9 md:max-lg:px-16 lg:max-xl:px-40 pt-14 xl:px-64">
+          <form action="" class="lg:grid grid-cols-4 grid-rows-2 gap-4">
+            <div class="col-start-1 col-end-3">
+              <label for="fullname" class="text-xs font-bold text-[#303030] sm:text-base">NAME</label>
+              <input class="w-full border-2 border-neutral-500 py-4 pl-4 text-xs mb-8  focus:outline-none focus:border-black sm:text-sm" type="text" id="fullname" placeholder="Enter your prefered name" required>
+            </div>
+            <div class="col-start-3 col-end-5 ">  
+              <label for="email" class="text-xs font-bold text-[#303030] sm:text-base ">EMAIL</label>
+              <input class="w-full border-2 border-neutral-500 py-4 pl-4 text-xs mb-8 focus:outline-none focus:border-black sm:text-sm" type="email" name="EMAIL" id="email" placeholder="Enter email address">
+            </div>
+            <div class="col-start-1 col-end-5">  
+              <label for="message" class="text-xs font-bold text-[#303030] sm:text-base">MESSAGE</label>
+              <textarea class="h-32 sm:h-36 resize-none w-full border-2 border-neutral-500 py-4  pl-4 text-xs focus:outline-none focus:border-black sm:text-sm" name="" id="message" cols="30" rows="10" placeholder="Write a message"></textarea>
+            </div>  
+          </form>
+        </div>
+
+        <div class="pt-[59px] text-center pb-24">
+          <a href="#" class="text-base font-semibold text-white px-5 py-1 bg-[#aa2072] rounded-xl sm:text-xl sm:px-8 sm:py-3 hover:opacity-90">See All</a>
+        </div>
+       
+      </section>
+
+      <section class="bg-neutral-950">
+
+        <div class="inline-flex gap-x-2 pl-6 pt-14 sm:hidden">
+          <img class="w-14 h-11"  src="./images/Asset 1 1.png" alt="">
+          <h3 class="text-xl leading-5 my-auto text-white">TAIRO</h3>
+        </div>
+
+        <div class=" grid gap-16 grid-cols-1 pt-12 sm:grid-cols-3 lg:px-20">
+
+          <div class="px-8">
+            <h3 class="text-base font-semibold text-white sm:text-xl">Get in touch</h3>
+            <p class="text-base leading-8 text-white">
+              tairoartist@something.com
+              +800 3456 5603 444
+            </p>
+            <p class="text-base leading-8 text-white pt-5">
+              82 Crossbar Road. Suite 12 West Side Queens,
+               NY 1204 United States tairoartist@something.com
+            </p>
+          </div>
+
+          <div class="px-8 lg:px-0 lg:text-left">
+            <h3 class="text-base font-semibold text-white pb-3.5 sm:text-xl">Socials</h3>
+            <div class="text-white "><span><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></span> Twitter</div>
+            <div class="text-white "><span><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></span> Instagram</div>
+            <div class="text-white "><span><i class="fa-solid fa-mug-hot" style="color: #ffffff;"></i></span> Buy me coffee</div>
+          </div>
+
+          <div class="px-8 lg:px-0">
+            <label class="text-base font-semibold text-white sm:text-xl" for="">Sign up for my Newsletter</label>
+            <input class="w-full bg-transparent border-2 border-white py-4 pl-4 mt-3.5 text-xs text-[#9A9A9A] " type="email" name="" id="" placeholder="Enter email address">
+            <div class="hidden lg:inline-flex gap-x-2 pl-6 pt-14 relative">
+              <img class=""  src="./images/Asset 1 1.png" alt="">
+              <h3 class="text-[40px] leading-10 my-auto text-white">TAIRO</h3>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="text-sm text-[#8c8c8c] bg-neutral-950 pt-20 grid gap-6 px-[26px] pb-12 sm:grid-cols-3 lg:px-60 sm:gap-12">
+      <div>Terms and conditions</div>
+      <div>Privacy Policy</div>
+      <div><span>&copy;</span>2020 Tairo. All rights reserved</div>
+    </footer>
+
+  </body>
+</html>
